@@ -1,77 +1,254 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Agro forte futuro sustentável</title>
+    <title>Agro Sustentável - Futuro do Campo</title>
+    <style>
+        :root {
+            --primary: #2d6a4f;
+            --secondary: #40916c;
+            --light: #f4f9f4;
+            --dark: #1b4332;
+            --text: #2d3748;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+        }
+
+        .content-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+
+        .pillar {
+            margin-bottom: 1.5rem;
+        }
+
+        .pillar strong {
+            color: var(--dark);
+        }
+
+        /* Estilos do Simulador Dashboard */
+        .dashboard {
+            background: #1e293b;
+            color: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .dashboard h2 {
+            color: #38bdf8;
+            border-bottom: 2px solid #0284c7;
+        }
+
+        .btn-simulate {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-simulate:hover {
+            background-color: #0ea5e9;
+        }
+
+        .sensor-card {
+            background: #334155;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 5px solid #64748b;
+        }
+
+        .sensor-card.critico { border-left-color: #ef4444; }
+        .sensor-card.ideal { border-left-color: #22c55e; }
+        .sensor-card.excessivo { border-left-color: #eab308; }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .badge.critico { background: #7f1d1d; color: #fca5a5; }
+        .badge.ideal { background: #14532d; color: #86efac; }
+        .badge.excessivo { background: #713f12; color: #fde047; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark);
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="c" alt="logo referente ao tema proposto">
-        <ul>
-            <li class="cabecalho-lista-item">Agro forte, futuro sustentável</li>
-            <li class="cabecalho-lista-item">Equilíbrio entre produção e meio ambiente</li>
-        </ul>
-    
-     <div id="acessibilidade" class="menu-acessibilidade" >
-            <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">Acessibilidade</button>
-            <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
-                <button  id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-                <button  id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-                <button  id="alterna-contraste" class="btn btn-primary fw-bold" >Alto contraste</button>
-            </div>
+
+    <header>
+        <h1>Agro Sustentável</h1>
+        <p>Tecnologia e respeito à natureza alimentando o futuro</p>
+    </header>
+
+    <div class="container">
+        <img src="http://googleusercontent.com/image_generation_content/0" alt="Fazenda Sustentável Exemplo" class="hero-image">
+
+        <div class="grid">
+            <section class="content-section">
+                <h2>O que é o Agro Sustentável?</h2>
+                <p>O agro sustentável equilibra três pilares fundamentais: <strong>produção econômica</strong>, <strong>preservação ambiental</strong> e <strong>responsabilidade social</strong>. É produzir hoje garantindo que as próximas gerações também consigam produzir e viver bem.</p>
+
+                <h3>Práticas e Tecnologias Verdes</h3>
+                <div class="pillar">
+                    <strong>• Plantio Direto:</strong> Cultivar a terra sem revirar o solo, usando a palha da colheita anterior para proteger a terra da erosão.
+                </div>
+                <div class="pillar">
+                    <strong>• ILPF (Integração Lavoura-Pecuária-Floresta):</strong> Integração de grãos, gado e floresta na mesma área, otimizando o espaço e gerando conforto térmico para os animais.
+                </div>
+                <div class="pillar">
+                    <strong>• Bioinsumos & MIP:</strong> Priorização do controle biológico e fertilizantes naturais, reduzindo severamente o uso de defensivos químicos.
+                </div>
+
+                <h3>Benefícios Globais</h3>
+                <p>Além de proteger o solo, essas práticas combatem as mudanças climáticas retendo carbono na terra, preservam a segurança hídrica por meio de irrigações eficientes e protegem insetos polinizadores vitais.</p>
+            </section>
+
+            <section class="dashboard">
+                <h2>IoT Farm Dashboard</h2>
+                <p style="font-size: 0.9rem; color: #94a3b8;">Simulador de sensores de campo para monitoramento ecológico em tempo real.</p>
+                
+                <button class="btn-simulate" onclick="rodarSimulacao()">Atualizar Sensores (Simulação)</button>
+                
+                <div id="sensores-container">
+                    </div>
+            </section>
         </div>
-  </header>
-    <section class="agro">
-        <div class="agro-div-conteudo">
-            <h2 class="agro-titulo">Sobre o tema proposto</h2>
-            <p class="agro-texto-um">Os antecedentes históricos do Colégio Estadual Edite Cordeiro Marques – Ensino de 1º e 2º Graus, inicia-se aproximadamente em 1932, com classe de alfabetização em casa particular de Frida Rickli Naiverth; em 1938/39, criou-se a Escola Pública Municipal do Rio Turvo, com professores Municipais e Estaduais; em 26/05/71, através do Decreto nº 408, criou-se o Grupo Escolar do Distrito de Turvo.</p>
-            <p class="agro-texto-dois">Endereço: Av. Nossa Sra. Aparecida, s/n, Centro, Turvo  - PR, 85150-000  Telefone:(42) 3642-1210 </p>
-        </div>
-        <img class="agro-imagem" src="img/Ronodonópolis_colheita_soja_(Roosevelt_Pinheiro)_28mar09.jpg" alt="">
-    </section>
-    <section class="agro">
-        <div class="agro-div-conteudo">
-            <h2 class="agro-titulo">Sobre o tema proposto</h2>
-            <p class="agro-texto-um">Os antecedentes históricos do Colégio Estadual Edite Cordeiro Marques – Ensino de 1º e 2º Graus, inicia-se aproximadamente em 1932, com classe de alfabetização em casa particular de Frida Rickli Naiverth; em 1938/39, criou-se a Escola Pública Municipal do Rio Turvo, com professores Municipais e Estaduais; em 26/05/71, através do Decreto nº 408, criou-se o Grupo Escolar do Distrito de Turvo.</p>
-            <p class="agro-texto-dois">Endereço: Av. Nossa Sra. Aparecida, s/n, Centro, Turvo  - PR, 85150-000  Telefone:(42) 3642-1210 </p>
-        </div>
-        <img class="agro-imagem" src="Ronodonópolis_colheita_soja_(Roosevelt_Pinheiro)_28mar09.jpg" alt="">
-    </section>
-    <section class="agro">
-        <div class="agro-div-conteudo">
-            <h2 class="agro-titulo">Sobre o tema proposto</h2>
-            <p class="agro-texto-um">Os antecedentes históricos do Colégio Estadual Edite Cordeiro Marques – Ensino de 1º e 2º Graus, inicia-se aproximadamente em 1932, com classe de alfabetização em casa particular de Frida Rickli Naiverth; em 1938/39, criou-se a Escola Pública Municipal do Rio Turvo, com professores Municipais e Estaduais; em 26/05/71, através do Decreto nº 408, criou-se o Grupo Escolar do Distrito de Turvo.</p>
-            <p class="agro-texto-dois">Endereço: Av. Nossa Sra. Aparecida, s/n, Centro, Turvo  - PR, 85150-000  Telefone:(42) 3642-1210 </p>
-        </div>
-        <img class="agro-imagem" src="Ronodonópolis_colheita_soja_(Roosevelt_Pinheiro)_28mar09.jpg" alt="">
-    </section>
-    <section class="estudante">
-        <h2 class="estudante-titulo">Quem são nossos estudantes?</h2>
-        <div class="estudante-todos">
-       
-        <div class="estudante-div">
-            <img class="estudante-imagem" src="Marcelo.jpeg" alt="foto do marcelo">
-            <h3 class="estudante-nome">Marcelo</h3>
-            <a href="https://github.com/marcelopaludetto"><img class="estudante-icone" src="github.png" alt="icone github"></a>
-            <a href="https://instagram.com/marcelopaludetto"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
-        </div>
-        <div class="estudante-div">
-            <img class="estudante-imagem" src="a.jpeg" alt="foto do ">
-            <h3 class="estudante-nome">Marcelo</h3>
-            <a href="https://github.com/marcelopaludetto"><img class="estudante-icone" src="github.png" alt="icone github"></a>
-            <a href="https://instagram.com/marcelopaludetto"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
-        </div>
-        
     </div>
-    </section>
-    <footer class="rodape">
-        <img class="rodape-imagem"src="logo.png" alt="logo ">
+
+    <footer>
+        <p>&copy; 2026 Repositório Agro-Sustainability-Monitor. Desenvolvido para o bem do planeta.</p>
     </footer>
-     <script src="main.js"></script>
+
+    <script>
+        // Transposição do código Python para JavaScript para rodar no navegador
+        function rodarSimulacao() {
+            const container = document.getElementById('sensores-container');
+            container.innerHTML = ''; // Limpa a tela anterior
+            
+            const sistemas = ["Plantio Direto", "Convencional", "ILPF"];
+            
+            for (let i = 1; i <= 4; i++) {
+                const umidade = (Math.random() * (80 - 20) + 20).toFixed(1);
+                const temperatura = (Math.random() * (35 - 18) + 18).toFixed(1);
+                const sistema = sistemas[Math.floor(Math.random() * sistemas.length)];
+                
+                let statusAgua = "IDEAL";
+                let classeStatus = "ideal";
+                let alertaText = "";
+                
+                if (umidade < 40) {
+                    statusAgua = "CRÍTICO";
+                    classeStatus = "critico";
+                    alertaText = "⚠️ Ativar gotejamento emergencial.";
+                } else if (umidade > 75) {
+                    statusAgua = "EXCESSIVO";
+                    classeStatus = "excessivo";
+                    alertaText = "⚠️ Desperdício detectado. Desligar válvulas.";
+                }
+                
+                let carbono = 0;
+                if (sistema === "ILPF") carbono = 4.5;
+                else if (sistema === "Plantio Direto") carbono = 2.1;
+
+                // Cria o elemento visual do sensor
+                const card = document.createElement('div');
+                card.className = `sensor-card ${classeStatus}`;
+                card.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>Sensor: SENS-00${i}</strong>
+                        <span class="badge ${classeStatus}">${statusAgua}</span>
+                    </div>
+                    <div style="margin-top: 0.5rem; font-size: 0.95rem;">
+                        <p style="margin: 2px 0;">🌾 Sistema: <b>${sistema}</b></p>
+                        <p style="margin: 2px 0;">💧 Umidade do Solo: <b>${umidade}%</b> | 🌡️ Temp: <b>${temperatura}°C</b></p>
+                        <p style="margin: 2px 0; color: #4ade80;">📉 Retenção de CO₂: <b>${carbono} t/ha/ano</b></p>
+                        ${alertaText ? `<p style="margin: 5px 0 0 0; color: #f87171; font-weight: bold;">${alertaText}</p>` : ''}
+                    </div>
+                `;
+                container.appendChild(card);
+            }
+        }
+
+        // Roda uma vez ao carregar a página
+        window.onload = rodarSimulacao;
+    </script>
 </body>
 </html>
