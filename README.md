@@ -1,9 +1,13 @@
-# Agro-tudo
-# 🌱 Agro Forte, Futuro Sustentável
+Agro-tudo
+🌱 Agro Forte, Futuro Sustentável
 
-> Projeto desenvolvido com auxílio da inteligência artificial Google Gemini.com o prompt 
+> Projeto desenvolvido com auxílio da inteligência artificial Google Gemini e ChatGPT.com os prompts
+gemini
 gere um código do git hub para um site com o tema agro forte futuro sustentável
 agora faça a parte do style
+ChatGPT
+Crie um readme para este código do github
+
 
 Site institucional desenvolvido com foco em sustentabilidade, inovação e tecnologia no agronegócio. O projeto apresenta uma interface moderna, responsiva e de fácil navegação, destacando os principais pilares para um futuro agrícola mais sustentável.
 
@@ -17,7 +21,6 @@ O site contém:
 - Rodapé informativo
 - Design responsivo para dispositivos móveis
 
----
 
 🚀 Tecnologias Utilizadas
 
@@ -25,7 +28,7 @@ O site contém:
 - CSS3
 - GitHub Pages
 
----
+
 
 📂 Estrutura do Projeto
 
@@ -37,7 +40,7 @@ agro-sustentavel/
 └── README.md
 ```
 
----
+
 
  🎨 Funcionalidades
 
@@ -63,7 +66,7 @@ Utilização de:
 ✅ Performance
 Projeto leve e sem dependência de bibliotecas externas.
 
----
+
 
 🌿 Pilares do Projeto
 
@@ -99,7 +102,6 @@ Demonstrar como o agronegócio pode unir:
 
 para construir um futuro mais verde e produtivo.
 
----
 
 🤖 Desenvolvimento
 
