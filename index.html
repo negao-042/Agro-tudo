@@ -3,58 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte - O Poder do Campo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* Reset de Estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #2e7d32; /* Verde Agro */
+            --secondary-color: #1b5e20; /* Verde Escuro */
+            --accent-color: #81c784; /* Verde Claro */
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --bg-light: #f4f7f4;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho e Navegação */
+        header {
+            background-color: var(--text-light);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin-left: 20px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Seção Hero (Banner Principal) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Seção Sobre / Pilares */
+        .features {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--text-light);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            font-size: 22px;
+        }
+
+        /* Seção Conteúdo / Manifesto */
+        .manifesto {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .manifesto-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .manifesto h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1e251f;
+            color: #b0b5b0;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none; /* Simplificação para mobile */
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>Agro<span>Forte</span></h1>
+        <div class="nav-container">
+            <div class="logo">Agro<span>Forte</span></div>
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#manifesto">Manifesto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="inicio" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('agro-forte.jpg');">
-        <div class="hero-content">
-            <h2>A Força que Alimenta o Mundo</h2>
-            <p>Tecnologia, inovação e o trabalho bruto que movem a economia.</p>
-            <a href="#sobre" class="btn">Saiba Mais</a>
+    <section class="hero" id="inicio">
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Inovação, tecnologia e respeito ao meio ambiente caminhando juntos para alimentar o amanhã.</p>
+        <a href="#pilares" class="btn">Conheça Nossos Pilares</a>
+    </section>
+
+    <section class="features" id="pilares">
+        <div class="feature-card">
+            <h3>Tecnologia Verde</h3>
+            <p>Uso de inteligência de dados, drones e automação para otimizar o plantio, reduzir o desperdício de insumos e proteger os recursos naturais.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Preservação Ativa</h3>
+            <p>Práticas de manejo que recuperam o solo, protegem os recursos hídricos e promovem a biodiversidade dentro e fora das áreas produtivas.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Produtividade Consciente</h3>
+            <p>Garantia de segurança alimentar global através de uma cadeia de suprimentos eficiente, ética, transparente e de baixo carbono.</p>
         </div>
     </section>
 
-    <section id="sobre" class="container section">
-        <h2>O Poder do Agronegócio</h2>
-        <p>O setor agropecuário combina tradição e a mais alta tecnologia de ponta para garantir produtividade, sustentabilidade e segurança alimentar global. Da colheita automatizada ao gerenciamento de precisão, o agro não para.</p>
-    </section>
-
-    <section id="galeria" class="container section">
-        <h2>Nossa Produção</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="agro-forte.jpg" alt="Colheita de soja de alta precisão">
-                <p>Tecnologia na Colheita</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1592997572594-34be01bc36c7?auto=format&fit=crop&w=500&q=80" alt="Plantação verdejante">
-                <p>Lavouras de Alta Performance</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=500&q=80" alt="Silo de armazenamento">
-                <p>Infraestrutura e Armazenamento</p>
-            </div>
+    <section class="manifesto" id="manifesto">
+        <div class="manifesto-content">
+            <h2>Nosso Compromisso</h2>
+            <p>Acreditamos que a força do agronegócio não se mede apenas pela colheita de hoje, mas pela saúde da terra que deixaremos para as próximas gerações. Unir a eficiência produtiva à responsabilidade socioambiental é o único caminho para um futuro verdadeiramente próspero.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Agro Forte - Orgulho de ser da terra.</p>
+        <p>&copy; 2026 Agro Forte, Futuro Sustentável. Todos os direitos reservados.</p>
+        <p>Desenvolvido para um amanhã mais verde.</p>
     </footer>
 
 </body>

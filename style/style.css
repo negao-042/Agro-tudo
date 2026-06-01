@@ -1,4 +1,6 @@
-/* Configurações Gerais */
+/* ==========================================
+   RESET DE ESTILOS & VARIÁVEIS
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,137 +8,140 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+    --primary-color: #2e7d32;     /* Verde Agro Principal */
+    --secondary-color: #1b5e20;   /* Verde Escuro para Destaques */
+    --accent-color: #81c784;      /* Verde Claro para Detalhes */
+    --text-dark: #333333;         /* Texto Principal */
+    --text-light: #ffffff;        /* Texto Claro */
+    --bg-light: #f4f7f4;          /* Fundo das Seções */
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --transition-fast: 0.3s ease;
+}
+
 body {
-    background-color: #f4f7f5;
-    color: #333;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     line-height: 1.6;
 }
 
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-/* Cabeçalho */
+/* ==========================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================== */
 header {
-    background-color: #1b4332;
-    color: #fff;
-    padding: 20px 0;
+    background-color: var(--text-light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-header .container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-header h1 span {
-    color: #52b788;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
 }
 
-nav ul {
+.logo span {
+    color: var(--text-dark);
+}
+
+.nav-menu {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav-menu li {
+    margin-left: 25px;
 }
 
-nav ul li a {
-    color: #fff;
+.nav-menu a {
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color var(--transition-fast);
 }
 
-nav ul li a:hover {
-    color: #52b788;
+.nav-menu a:hover {
+    color: var(--primary-color);
 }
 
-/* Banner Principal (Hero) */
+/* ==========================================
+   SEÇÃO HERO (BANNER PRINCIPAL)
+   ========================================== */
 .hero {
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    height: 70vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #fff;
+    color: var(--text-light);
+    padding: 20px;
 }
 
-.hero-content h2 {
-    font-size: 3rem;
+.hero h1 {
+    font-size: 48px;
     margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 35px;
+    font-weight: 300;
 }
 
 .btn {
-    background-color: #52b788;
-    color: #1b4332;
-    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 14px 36px;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .btn:hover {
-    background-color: #74c69d;
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
-/* Galeria de Imagens */
-.gallery-grid {
+/* ==========================================
+   SEÇÃO DE PILARES (CARDS)
+   ========================================== */
+.features {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1-fr));
-    gap: 20px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-.gallery-item {
-    background-color: #fff;
+.feature-card {
+    background: var(--text-light);
+    padding: 40px;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.gallery-item p {
-    padding: 15px;
-    font-weight: bold;
-    color: #1b4332;
-}
-
-/* Rodapé */
-footer {
-    background-color: #1b4332;
-    color: #fff;
+    box-shadow: var(--card-shadow);
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    border-top: 5px solid var(--primary-color);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
+
+.feature-card:hover
