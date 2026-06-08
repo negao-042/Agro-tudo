@@ -9,12 +9,18 @@
 }
 
 :root {
-    --primary-color: #2e7d32;     /* Verde Agro Principal */
-    --secondary-color: #1b5e20;   /* Verde Escuro para Destaques */
-    --accent-color: #81c784;      /* Verde Claro para Detalhes */
-    --text-dark: #333333;         /* Texto Principal */
-    --text-light: #ffffff;        /* Texto Claro */
-    --bg-light: #f4f7f4;          /* Fundo das Seções */
+    --primary-color: #2e7d32;
+    /* Verde Agro Principal */
+    --secondary-color: #1b5e20;
+    /* Verde Escuro para Destaques */
+    --accent-color: #81c784;
+    /* Verde Claro para Detalhes */
+    --text-dark: #333333;
+    /* Texto Principal */
+    --text-light: #ffffff;
+    /* Texto Claro */
+    --bg-light: #f4f7f4;
+    /* Fundo das Seções */
     --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     --transition-fast: 0.3s ease;
 }
@@ -80,8 +86,8 @@ header {
    SEÇÃO HERO (BANNER PRINCIPAL)
    ========================================== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.unsplash.com/photo- criada por Gemini') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo- criada por Gemini') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     flex-direction: column;
