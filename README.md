@@ -1,5 +1,5 @@
 Agro-tudo
-🌱 Agro Forte, Futuro Sustentável
+ Agro Forte, Futuro Sustentável
 
 > Projeto desenvolvido com auxílio da inteligência artificial Google Gemini e ChatGPT.com os prompts
 gemini
@@ -22,7 +22,7 @@ O site contém:
 - Design responsivo para dispositivos móveis
 
 
-🚀 Tecnologias Utilizadas
+ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
@@ -30,7 +30,7 @@ O site contém:
 
 
 
-📂 Estrutura do Projeto
+ Estrutura do Projeto
 
 ```text
 agro-sustentavel/
@@ -42,19 +42,19 @@ agro-sustentavel/
 
 
 
- 🎨 Funcionalidades
+  Funcionalidades
 
- ✅ Layout Responsivo
+  Layout Responsivo
 Adaptação automática para desktops, tablets e smartphones.
 
-✅ Navegação Simples
+ Navegação Simples
 Menu com links para:
 
 - Início
 - Pilares
 - Manifesto
 
-✅ Design Moderno
+ Design Moderno
 Utilização de:
 
 - Variáveis CSS
@@ -63,12 +63,12 @@ Utilização de:
 - Efeitos Hover
 - Paleta de cores sustentável
 
-✅ Performance
+Performance
 Projeto leve e sem dependência de bibliotecas externas.
 
 
 
-🌿 Pilares do Projeto
+Pilares do Projeto
 
 Tecnologia Verde
 Uso de tecnologias inovadoras para aumentar a produtividade e reduzir impactos ambientais.
@@ -80,7 +80,7 @@ Produtividade Consciente
 Produção agrícola eficiente, sustentável e alinhada às necessidades das futuras gerações.
 
 
-📱 Responsividade
+Responsividade
 
 O projeto foi desenvolvido para funcionar corretamente em:
 
@@ -91,7 +91,7 @@ O projeto foi desenvolvido para funcionar corretamente em:
 
 
 
-🎯 Objetivo
+Objetivo
 
 Demonstrar como o agronegócio pode unir:
 
@@ -103,17 +103,17 @@ Demonstrar como o agronegócio pode unir:
 para construir um futuro mais verde e produtivo.
 
 
-🤖 Desenvolvimento
+Desenvolvimento
 
 A estrutura inicial deste projeto foi desenvolvida com o auxílio da inteligência artificial **Google Gemini** e **ChatGPT**, que contribuiram para a criação do código-fonte, organização do layout e documentação do projeto.
 
 
-📄 Licença
+Licença
 
 Este projeto está disponível sob a licença MIT.
 
 
-👨‍💻 Autor
+Autor
 
 Projeto desenvolvido com suporte da inteligência artificial **Google Gemini** e **ChatGPT** para o tema:
 
