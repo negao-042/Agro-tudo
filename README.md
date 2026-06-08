@@ -26,7 +26,6 @@ O site contém:
 
 - HTML5
 - CSS3
-- GitHub Pages
 
 
 
@@ -38,6 +37,7 @@ agro-sustentavel/
 ├── index.html
 ├── style.css
 └── README.md
+└── header.css
 ```
 
 
