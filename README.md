@@ -112,8 +112,15 @@ Licença
 
 Este projeto está disponível sob a licença MIT.
 
+🖼️ Galeria de Imagens
+imagem-Agro.jpg
 
-Autor
+👨‍🎓 Autoria
+
+**Autor(a):** Nome do(a) estudante  
+**Professor(a) orientador(a):** Nome do(a) professor(a)  
+**Escola:** Colégio Cívico Militar Edite Cordeiro Marques 
+**Município:** Guarapuava – Paraná
 
 Projeto desenvolvido com suporte da inteligência artificial **Google Gemini** e **ChatGPT** para o tema:
 
